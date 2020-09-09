@@ -1,89 +1,456 @@
 <!DOCTYPE>
 <html>
-<head>
+	<head> <!--head-end-->
 
-<meta>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<meta name="description" content="front end developer,web designer,ux designer">
+			<meta name="keywords" content="html,css,js,sass,jquery,react,github,photoshop,bootstrap">
+			<meta name="author" content="preeti maurya">
+		</meta>
+		   <link rel="icon" href="./image/favicon.ico" type="image/ico"/>
+		   <link rel="stylesheet" href="src/css/style.css">	
+	</head> <!--head-star-->
 
-</meta>
+	<body> <!--body-start-->
 
-
-<style>
-
-
-*{
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
-  font-family:times new roman;
-  background:#e8e6e6;
-  //overflow-x:hidden;
- }
- 
- header{
-	width: 100%;
-	padding-right: 15px;
-    padding-left: 15px;
-    margin:0 auto;
- }
- 
- .error_desk{
- 
- background-size:cover;
- //height:100vh;
- width:100%;
- background-repeat:no-repeat; 
- background-attachment:fixed;
- }
-
- 
-@media screen and (max-width:600px){
-.error_desk{
- display:none;
- }
-
- h3{
- font-size:24px;
- transform: translate(0%, 500%);
-
- }
- 
-  
-}
-
- 
-@media screen and (min-width:601px){
-
-  .error_mob{
-   display:none;
-   }
- 
-}
-
-
-</style>
-
-
-
-
-</head>
-
-
-<body>
-
-<!--start-about-header-->
-
-		<header>
-			<div class="error_desk">
-				<img src= "image\404error.jpg" alt="404error" style="width:100%;"/> 
+		<header> <!--header-start-->
+            <div class="header-logo">
+			<a href="#"><img class="logo" src="./image/logo.png" alt="logo"/></a>
 			</div>
-			<div class="error_mob">
-				<h3>Sorry Website Is Under Maintenance</h3>
+			<div class="menu-btn">
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
+				<div class="btn-line"></div>
 			</div>
-		</header>	
 
-<!--end-about-header-->
-</body>
+			<div class="menu">
+
+				<div class="menu-branding">
+					<div class="portrait"></div>
+				</div>
+
+				<ul class="menu-nav">
+					<li class="nav-item"><a href="#home" class="nav-link">home</a></li>
+					<li class="nav-item"><a href="#skills" class="nav-link">skills</a></li>
+					<li class="nav-item"><a href="#work" class="nav-link">work</a></li>
+					<li class="nav-item"><a href="#service" class="nav-link">service</a></li>
+					<li class="nav-item"><a href="#portfolio" class="nav-link">portfolio</a></li>
+					<li class="nav-item"><a href="#contact" class="nav-link">contact</a></li>
+				</ul>
+			</div>
+
+		</header> <!--header-end-->
+
+
+
+	
+		<main id="wrapper"> <!--wrapper-start-->
+
+			<section class="container-fluid" id="home"> <!--info-start-->
+				<div class="row">
+				
+					<div class="col-6">
+							<div class="heading-intro">
+								<h1 class="lg-heading">Preeti
+									<span class="text-secondary">Maurya</span>
+								</h1>
+								<h2 class="sm-heading">Front-end-developer</h2>
+								<p class="tx-heading">I'm Front-End Developer with a strong educational background in Information technology.
+								i am keen learner in javascript and extremely passionate about coding.every day i learn new things and keep up with the new technologies.I started creating cool web designs using HTML and CSS back in 2017.
+								Because, coding is my first love.</p>
+								
+
+
+							<div class="about-info__links">
+								<!-- <a href="#!" class="about-info__single-link dark-btn">hire me</a> -->
+								<a href="https://drive.google.com/file/d/1OUcvUfmz0OgRp_1qTkPIt07Y5eK6ngc_/view?usp=sharing" target="_blank" class="about-info__single-link light-btn" download>download cv <i class="fa fa-cloud-download-alt change"></i></a>
+							</div>
+							</div>
+					</div>
+					
+					<div class="col-6">
+						<div class="heading-image">
+							<div class="image">
+								<img src="image/IMG.png" class="img"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> <!--info-end-->
+
+			<section class="container" id="skills"> <!--skills-start-->
+				<div class="row">
+					<div class="col-12">
+						<div class="header">
+								<h2 class="header-name">  Skills</h2>
+								<p class="header-text">Work skills are skills that are developed for specific jobs or positions.
+								one of my favorite activities is teaching others in the field to fulfill their potential
+								and deepen my knowledge. 
+								</p>							
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="upgrade">
+							<ul class="upgrade_ul">
+							
+								<li class="upgrade_li w_xl w_lg w_md w_sm">
+									<a class="link orange">
+									<span><i class="fab fa-html5 fa-3x"></i></span>
+									<span class="lang">html</span>
+									</a>
+								</li>
+
+								<li class="upgrade_li w_xl w_lg w_md w_sm">
+									<a class="link orange">
+									<span><i class="fab fa-css3 fa-3x"></i></span>
+									<span class="lang">css</span>
+									</a>
+								</li>
+
+								<li class="upgrade_li w_xl w_lg w_md w_sm">
+									<a class="link orange">
+									<span><i class="fab fa-js fa-3x"></i></span>
+									<span class="lang">javascript</span>
+									</a>
+								</li>
+                                
+								<li class="upgrade_li w_xl w_lg w_md w_sm">
+									<a class="link orange">
+									<span><img class="" src="image/jquery.png" alt="jquery"/></span>
+									<span class="lang">jquery</span>
+									</a>
+								</li>
+								
+								<li class="upgrade_li w_xl w_lg w_md w_sm">  <i class="fab fa-bootstrap"></i>
+									<a class="link orange">
+									<span><img class="img_icon" src="image/bootstrap.png" alt="bootstrap"/></span>
+									<span class="lang">bootstrap</span>
+									</a>
+								</li>
+
+								<li class="upgrade_li w_xl w_lg w_md w_sm">
+									<a class="link orange">
+									<span><i class="fab fa-react fa-3x"></i></span>
+									<span class="lang">react</span>
+									</a>
+								</li>
+
+								<li class="upgrade_li w_xl w_lg w_md w_sm">
+									<a class="link orange">
+									<span><i class="fab fa-github fa-3x "></i></span>
+									<span class="lang">github</span>
+									</a>
+								</li>
+
+								<li class="upgrade_li w_xl w_lg w_md w_sm">
+									<a class="link orange">
+									<span><i class="fab fa-sass fa-3x"></i></span>
+									<span class="lang">sass</span>
+									</a>
+								</li>
+								
+								<li class="upgrade_li w_xl w_lg w_md w_sm">
+									<a class="link orange">
+									<span><img class="img_icon" src="image/photoshop.png" alt="photoshop"/></span>
+									<span class="lang">photoshop</span>
+									</a>
+								</li>
+							
+						</ul>
+						</div>
+					</div>
+				</div>
+            </section> <!--skills-end-->
+
+			<section class="container" id="work"> <!--work-start -->
+				<div class="row">
+
+					<div class="col-12">
+						<div class="header">
+							<h2 class="header-name">works</h2>
+								<p class="header-text">Developed a responsive websites in specific project.
+								Designed 20+ social media post, brochure, standee board and worked on some international projects</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12">			  
+						<div class= "wrap">
+						
+							<div class="box_area">
+								<div class="custom"></div>
+								<div class="box_date">
+									<span></span>
+									<span>2013-2015</span>
+								</div>
+								<div class="box_text orange">
+									<h2>Patkar-Varde</h2>
+									<h3>mumbai,maharashtra</h3>
+									<p>Completed the degree of master of science in information technology and secured decent scores.</p>
+								</div>
+							</div>
+
+							<div class="box_area box_right">
+								<div class="custom"></div>
+								<div class="box_date">
+									<span></span>
+									<span>2016-2017</span>
+								</div>
+								<div class="box_text orange">
+									<h2>Frameboxx-Animation course</h2>
+									<h3>mumbai.maharashtra</h3>
+									<p> certified in basic understanding of photoshop, html and css </p>
+								</div>
+							</div>
+
+							<div class="box_area">
+								<div class="custom"></div>
+								<div class="box_date">
+									<span></span>
+									<span>2017-2018</span>
+								</div>
+								<div class="box_text orange">
+									<h2>Intellinects Venture</h2>
+									<h3></h3>
+									<p>worked As Ux/Ui & Web Designer.My task was to design an app(ui),brochure,leaflet,report card and maintenance of their website .</p>
+								</div>
+							</div>
+
+							<div class="box_area box_right">
+								<div class="custom"></div>
+								<div class="box_date">
+									<span></span>
+									<span>2018-2019</span>
+								</div>
+								<div class="box_text orange">
+									<h2>bista solutions </h2>
+									<h3>mumbai,maharashtra</h3>
+									<p>worked as Jr.web developer and i had to handle the company website, created a brochure, social media post ,standee board and worked on some international projects</p>
+								</div>
+							</div>
+							
+							</div>								
+					</div>		
+				</div>
+			</section> <!--work-end -->
+
+			<section class="container" id="service"> <!--service-start-->
+				<div class="row">
+					<div class="col-12">
+							<div class="header">
+								<h2 class="header-name">service</h2>
+									<p class="header-text">Great content is created for specific purpose. Identifing
+									the need is crucial in the process.We learn about your needs, brand and company identity, and then determine the best option of action your online success.</p>
+							</div>
+					</div>
+					 
+
+					<div class="col-12">
+						<div class="service_one"> 
+
+							<div class="item_one">
+								<a class="link orange">
+								<span><img class="" src="image/web1.png" alt="webdesigner"/></span>
+								<span class="lang">Web Designer</span>
+								<p class="text">
+								Modern and mobile-ready website that will help your marketing.</p>
+								</a>
+							</div>
+	
+							<div class="item_one">
+								<a class="link orange">
+								<span><i class="fa fa-mobile fa-3x"></i></span>
+								<span class="lang">Responsive Design</span>
+								<p class="text">
+								Up coming years, you can't go online without having a mobile responsive website.</p>
+								</a>
+							</div>
+	
+							<div class="item_one">
+								<a class="link orange">
+								<span><img class="" src="image/psd.png" alt="psdtohtml"/></span>
+								<span class="lang">PSD to HTML</span>
+								<p class="text">If you already have a design in your Invision,
+								I can create it from scratch into pixel-perfect.</p>
+								</a>
+							</div>
+	
+							<div class="item_one">
+								<a class="link orange">
+								<span><i class="fa fa-code fa-3x"></i></span>
+								<span class="lang">UX-Designer</span>
+								<p class="text"> the design of the entire process is  about branding, designing, usability and function. </p>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section> <!--service-end-->
+
+			<section class="container" id="portfolio"> <!--portfolio-start-->
+				<div class="row">
+
+					<div class="col-12">
+						<div class="header">
+							<h2 class="header-name">portfolio</h2>
+								<p class="header-text">A showcase of my work can be executed in wide range of ways 
+								such as thumbnail galleries but the intent remains the same in all of them. to give the site visitors an idea about what the portfolio owner can do</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12">							  
+						<div class="portfolio_one">
+							
+								<div class="item_one">
+									<a class="link orange">
+									<img class="myImg" src="image/portfolio_img.jpg" alt="portfolio"/>
+									</a>
+                                    <div class="middle">
+										<div class="modal-text"> My Portfolio</div>
+								    </div>
+									<div class="modal-bg">
+										<div class="modal">
+											<div class="modal-left">
+												<img src="image/portfolio_img.jpg" alt="portfolio" width="626" />
+											</div>
+
+											<div class="modal-right">
+												<p>Here, you can find my portfolio in that i had used different languages 
+													with innovative way to design my project work.
+												</p>
+												<table border="1">
+													<tbody>
+														<tr>
+															<th>Project Name</th>
+															<td>My Portfolio</td>
+														</tr>
+														<tr>
+															<th>Language Used</th>
+															<td>HTML, CSS-(SASS), JS</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										       <span class="modal-close"><i class="fa fa-times"></i></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="item_one">
+									<a class="link">
+									<img class="myImg1" src="image/coming-soon.jpg" alt="coming-soon" />
+									</a>
+									<div class="middle">
+										<div class="modal-text">Coming Soon</div>
+									</div>
+									<div class="modal-bg1">
+										<div class="modal1">
+											<div class="modal-left1">
+												<img src="image/coming-soon.jpg" alt="coming-soon"/>
+											</div>
+											<div class="modal-right1">
+												<p>Coming soon with some another project... stay tuned
+												</p>
+												<table border="1">
+													<tbody>
+														<tr>
+															<th>Project Name</th>
+															<td>Coming Soon...</td>
+														</tr>
+														<tr>
+															<th>Language Used</th>
+															<td>.....!!!!</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										 <span class="modal-close1"><i class="fa fa-times"></i></span>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+					    </div>
+
+				</div>
+			</section> <!--portfolio-end-->		
+
+			<section class="container" id="contact"> <!--contact-start-->
+				<div class="row">
+					<div class="col-12">
+						<div class="header">
+							<h2 class="header-name">contact</h2>
+								<p class="header-text">I'd love if you reached out to me. Even if it's just to say "Hey!".
+									Don't hesitate! Drop me a line and I’ll get back to you ASAP!</p>
+						</div>
+					</div>
+					
+					<div class="col-12">
+						<div class="contact_one"> 
+					
+							<div class="item_one">
+								<ul class="contact_link orange">
+									<li><i class="fas fa-map-marker-alt fa-2x"></i></li>
+									<li class="lang" style="margin-left:6px;">mumbai,india</li>
+								</ul>
+							</div>
+					
+							<div class="item_one">
+								<ul class="contact_link orange">
+									<li><a href="https://mail.google.com/" target="_blank"><i class="fas fa-envelope fa-2x"></i></a></li>
+									<li class="lang" style="margin-left:6px;" >gpreetiwd@gmail.com</li>
+								</ul>
+							</div>
+					
+							<div class="item_one">
+								<ul class="contact_link orange">
+									<li><a href="https://github.com/PreetiMau" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>&nbsp;
+									  <li><a href="www.linkedin.com/in/ipreetimaurya" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></li>&nbsp;
+								    <li><a href="https://www.instagram.com/pm_ideas/" target="_blank"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+									<li class="lang" style="margin-left:6px;" >find me online</li>
+									</ul>
+							</div>
+					
+						</div>
+					
+					</div>
+				</div>
+			</section> <!--contact-end-->
+			
+		</main>	<!--wrapper-end-->
+
+		<footer class="footer" id="footer"> <!--footer-start-->
+
+			<div class="footer_nav">
+				<a href="#home">home</a>
+				<a href="#skills">skills</a>
+				<a href="#portfolio">portfolio</a>
+				<a href="#service">service</a>
+			</div>
+
+			<div class="footer_text">
+				<p>© 2020 Preeti Maurya</p>
+
+			</div>
+
+			<!-- <div class="footer_social">
+				<a href="#"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+				<a href="#"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
+				<a href="#"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
+            </div> -->
+
+		</footer> <!--footer-end-->
+
+        <!--javascript-start-->
+			<script src="src/js/main.js" ></script> 
+        <!--javascript-end-->
+
+	</body> <!--body-end-->
 
 </html>

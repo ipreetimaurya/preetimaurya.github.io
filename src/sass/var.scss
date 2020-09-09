@@ -1,0 +1,187 @@
+//color 
+    
+	
+$color:#feb633;
+$secondary-color:#8a8fa3;
+$background-color:#2b2c2c;
+$white-color:#fff;	
+$modal-bg:#17191987;
+
+// font
+
+$font-style:400 1rem/1.6 "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+//header
+@mixin header {
+color: $color;
+font-size: 36px;
+text-align: center;
+text-transform: capitalize;
+letter-spacing: 1.5px;
+font-weight: bold;
+}
+
+
+//padding & margin 
+
+$padding:0;
+$margin:0;
+
+
+//width & height
+
+$width:100%;
+$height:100%;
+$min-width:100%;
+$max-width:100%;
+$min-height:100%;
+
+
+//container
+
+@mixin container {
+width: $width;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 0;
+margin-bottom: 0;
+// border: 1px solid green;
+}
+
+
+//container-fluid
+
+@mixin container-fluid {
+width: $width;
+margin-right: auto;
+margin-left: auto;
+}
+
+//p-paragraph
+
+@mixin paragraph {
+margin: 0;
+}
+
+
+//flex-row
+
+@mixin flex-row {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+
+//flex-center
+
+@mixin flex-center {
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: $width;
+}
+
+
+//flex-end
+
+@mixin flex-end {
+display: flex;
+justify-content: flex-end;
+}
+
+
+//single_button
+
+@mixin text-format {
+text-decoration: none;
+text-transform: capitalize;
+}
+
+//browser comptability 
+
+@mixin transform($property) {
+-webkit-transform: $property;
+-ms-transform: $property;
+-moz-transform: $property;
+-o-transform: $property;
+}
+
+@mixin transition($all) {
+-webkit-transition:$all;
+-ms-transition:$all;
+-moz-transition:$all;
+-o-transition:$all;
+}
+
+//header
+
+@mixin heading {
+display: block;
+width: 100%;
+}
+
+//horizontal-line
+
+@mixin line {
+}
+
+//header-name
+
+@mixin header-name {
+font-size: 40px;
+position: relative;
+font-weight: bold;
+color: #feb633;
+text-align: center;
+text-transform: capitalize;
+}
+
+//heading-text
+
+@mixin header-text {
+font-size: 20px;
+color: $secondary-color;
+padding: 0 5%;
+text-align: justify;
+text-align-last: center;
+margin: 0;
+}
+
+//modal-img and hover 
+
+@mixin modal-img {
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+@mixin modal-img-hover {
+opacity:0.7;
+}
+
+//screen width...
+
+.w_xs {
+width: 100%;
+}
+
+.w_sm {
+width: calc(100% /2);
+}
+
+.w_md {
+width: calc(100% /3);
+}
+
+.w_lg {
+width: calc(100% /4);
+}
+
+.w_xl {
+width: calc(100% /5);
+}
+
+

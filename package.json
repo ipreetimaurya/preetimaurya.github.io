@@ -1,0 +1,14 @@
+{
+  "name": "sassganesh",
+  "version": "1.0.0",
+  "description": "pracx",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "node-sass src/sass/main.scss src/css/style.css"
+	},
+  "author": "ganesh",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

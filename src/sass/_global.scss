@@ -1,0 +1,17 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+
+html,body {
+	padding:$padding;
+    margin:$margin;
+    text-align: left;
+    background-color:$background-color;
+	font:$font-style;
+	width:$width;
+	height:$height;
+	position:relative;
+	
+}

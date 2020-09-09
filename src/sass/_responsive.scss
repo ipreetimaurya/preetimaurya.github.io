@@ -1,0 +1,46 @@
+@mixin mediaXs{
+  @media screen and(max-width:320px){
+    @content;
+  }
+ }
+
+@mixin mediaSm{
+ @media screen and(max-width:600px){
+   @content;
+ }
+}
+
+
+@mixin mediaMd{
+ @media screen and(min-width:768px){
+   @content;
+ }
+}
+
+@mixin mediaLg{
+ @media screen and (min-width:992px){
+   @content;
+ }
+}
+
+@mixin mediaXl{
+ @media screen and (min-width:1200px){
+   @content;
+ }
+}
+
+
+@mixin orientation{
+  @media only screen and (min-device-width : 560px) and (max-device-width : 823px) and (orientation : landscape) {
+    @content;
+ }
+}
+
+
+
+
+
+
+
+
+
