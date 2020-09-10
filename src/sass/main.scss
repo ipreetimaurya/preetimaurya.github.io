@@ -48,6 +48,7 @@ margin-left: -15px;
 .col-6{
 	-webkit-box-flex: calc(100% / 2);
 	-ms-flex: calc(100% / 2);
+	-moz-box-flex: calc(100% / 2);
 	flex: calc(100% / 2);
 	text-align:left;  
 }
@@ -55,6 +56,7 @@ margin-left: -15px;
 .col-4{
 	-webkit-box-flex: calc(100% / 3);
 	-ms-flex: calc(100% / 3);
+	-moz-box-flex: calc(100% / 3);
 	flex: calc(100% / 3);
 	text-align:left;  
 }
@@ -62,6 +64,7 @@ margin-left: -15px;
 .col-12{
 	-webkit-box-flex:100%;
 	-ms-flex:100%;
+	-moz-box-flex: 100%;
 	flex:100%;
 	text-align:center;
 }
@@ -82,12 +85,15 @@ left:35px;
   
   .header-logo a {
 display: -webkit-box;
+display: -moz-box;
 display: -ms-flexbox;
 display: flex;
 -ms-flex-wrap: wrap;
+-webkit-flex-wrap:wrap;
 flex-wrap: wrap;
 -webkit-box-align: center;
 -ms-flex-align: center;
+-moz-box-align:center;
 align-items: center;
 height: 60px;
 }
@@ -158,16 +164,21 @@ overflow-x:hidden;
     
 	&-branding,&-nav{
 		display:-webkit-box;
+		display:-moz-box;
 		display:-ms-flexbox;
 		display:flex;
 		-webkit-box-orient:vertical;
 		-webkit-box-direction:normal;
+		-moz-box-orient:vertical;
+		-moz-box-direction:normal;
 		-ms-flex-flow:column wrap;
 				flex-flow:column wrap;
 		-webkit-box-align:center;
+		-moz-box-align:center;
 		-ms-flex-align:center;
 				align-items:center;
 		-webkit-box-pack:center;
+		-moz-box-pack:center;
 		-ms-flex-pack:center;
 				justify-content:center;
 		float:left;
@@ -250,7 +261,7 @@ width:$width;
 
 .heading-intro{
 	@include flex-center;
-	-webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;
+	-webkit-box-align: start; -moz-box-align: start; -ms-flex-align: start; align-items: flex-start;
 	padding:5% 8%;
 	color:$secondary-color;
     }
@@ -357,6 +368,7 @@ width:$width;
     .image{
 	@include flex-end;
 	background-size:cover; 
+	width:100%;
 	
 	&>img{
 	background-color: #000;
@@ -423,7 +435,7 @@ width:$width;
 	@include flex-row;
 	list-style-type: none;
     padding: 3% 0 ;
-    -webkit-box-align: stretch;-ms-flex-align: stretch;align-items: stretch;
+    -webkit-box-align: stretch; -moz-box-align: stretch; -ms-flex-align: stretch;align-items: stretch;
     font-size: 20px;
 	}
 	
@@ -466,6 +478,7 @@ width:$width;
  
 .wrap{
 	display:-webkit-box;
+	display:-moz-box;
 	display:-ms-flexbox;
 	display:flex;
 	-ms-flex-wrap:wrap;
@@ -476,11 +489,13 @@ width:$width;
 	
 	.box_area{
 	display:-webkit-box;
+	display:-moz-box;
 	display:-ms-flexbox;
 	display:flex;
 	-ms-flex-wrap:nowrap;
 		flex-wrap:nowrap;
 	-webkit-box-pack:center;
+	-moz-box-pack:center;
 	-ms-flex-pack:center;
 			justify-content:center;
 	width:$width;
@@ -489,20 +504,26 @@ width:$width;
 	.box_date{
 		display:-webkit-box;
 		display:-ms-flexbox;
+		display:-moz-box;
 		display:flex;
 		background:-webkit-gradient(linear,left top, right top,color-stop(45%, $background-color),color-stop(45%, $color),color-stop(45%, $color),color-stop(50%, $background-color));
 		background:-o-linear-gradient(left,$background-color 45%,$color 45%,$color 45%,$background-color 50%);
+		background:-moz-linear-gradient(left,$background-color 45%,$color 45%,$color 45%,$background-color 50%);
 		background:linear-gradient(to right,$background-color 45%,$color 45%,$color 45%,$background-color 50%);
 		-webkit-box-orient:vertical;
 		-webkit-box-direction:normal;
+		-moz-box-orient:vertical;
+		-moz-box-direction:normal;
 		-ms-flex-direction:column;
 				flex-direction:column;
 		-webkit-box-ordinal-group:3;
+		-moz-box-ordinal-group:3;
 		-ms-flex-order:2;
 				order:2;
 		text-align:center;
 		font-size:24px;
 		-ms-flex-preferred-size:10px;
+
 			flex-basis:10px;
 		color:$white-color;
     
@@ -588,13 +609,17 @@ width:$width;
 	border:2px solid #feb633;
 	vertical-align:middle;
 	display:-webkit-box;
+	display:-moz-box;
 	display:-ms-flexbox;
 	display:flex;
 	-webkit-box-orient:vertical;
 	-webkit-box-direction:normal;
+	-moz-box-orient:vertical;
+	-moz-box-direction:normal;
 	-ms-flex-direction:column;
 	        flex-direction:column;
 	-webkit-box-align:center;
+	-moz-box-align:center;
 	-ms-flex-align:center;
 	        align-items:center;
 
@@ -620,7 +645,7 @@ width:$width;
 	letter-spacing: -0.5px;
 	font-size: 16px;
 	text-align: justify;
-	-webkit-box-flex: 1;-ms-flex: 1 0 auto;flex: 1 0 auto;
+	-webkit-box-flex: 1; -moz-box-flex: 1; -ms-flex: 1 0 auto;flex: 1 0 auto;
 	padding-top: 1rem;
 	margin: 0 auto;
 	text-align-last: left;
@@ -638,7 +663,7 @@ width:$width;
   //background-color:$color;
   clear:both;  
   @include flex-center;
-  -webkit-box-align:center;-ms-flex-align:center;align-items:center;
+  -webkit-box-align:center; -moz-box-align:center; -ms-flex-align:center;align-items:center;
   border-top:1px solid $color;
   color:$secondary-color;
 
@@ -696,7 +721,9 @@ width:$width;
     opacity: 0;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);
     text-align: center;
 	}
 	
@@ -735,12 +762,15 @@ width:$width;
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   opacity:0;
   display:-webkit-box;
+  display:-moz-box;
   display:-ms-flexbox;
   display:flex;
   -webkit-box-pack:center;
+  -moz-box-pack:center;
   -ms-flex-pack:center;
           justify-content:center;
   -webkit-box-align:center;
+  -moz-box-align:center;
   -ms-flex-align:center;
           align-items:center;
 }
@@ -785,10 +815,13 @@ border: 1px solid #ccc;
 position:relative;
 width:70%;
 display: -webkit-box;
+display: -moz-box;
 display: -ms-flexbox;
 display: flex;
 -webkit-box-orient: horizontal;
 -webkit-box-direction: normal;
+-moz-box-orient: horizontal;
+-moz-box-direction: normal;
 -ms-flex-direction: row;
         flex-direction: row;
 padding:2%;
@@ -805,10 +838,13 @@ margin-left:2%;
 .modal-left,.modal-left1{
 width:40%;
 display: -webkit-box;
+display: -moz-box;
 display: -ms-flexbox;
 display: flex;
 -webkit-box-orient: horizontal;
 -webkit-box-direction: normal;
+-moz-box-orient: horizontal;
+-moz-box-direction: normal;
 -ms-flex-direction: row;
         flex-direction: row;
 }
@@ -818,6 +854,7 @@ display: flex;
 	display:block;
 	border:2px solid $color;
 	border-radius: .25rem;
+	height:200px;
 }
 
 .modal-right > p,.modal-right1 > p{
@@ -829,18 +866,27 @@ display: flex;
 /*contact*/
 ul.contact_link{
     padding: 10% 10%;
-    display: -webkit-box;
+	display: -webkit-box;
+	display: -moz-box;
 display: -ms-flexbox;
 display: flex;
 -webkit-box-orient: horizontal;
 -webkit-box-direction: normal;
+-moz-box-orient: horizontal;
+-moz-box-direction: normal;
 -ms-flex-direction: row;
         flex-direction: row;
     border: 2px solid $color;
 	text-decoration: none;
 	list-style:none;
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	-ms-flex-align:center;
 	align-items:center;
-	justify-content:center;
+	-webkit-box-pack:center;
+	-moz-box-pack:center;
+	-ms-flex-pack:center;
+	        justify-content:center;
 	color: #8a8fa3;
     width:100%;
     text-transform: uppercase;
@@ -858,24 +904,30 @@ display: flex;
 }
 
 /*scrollbar*/
-
 ::-webkit-scrollbar {
 	width: 20px;
-  }
-  ::-moz-scrollbar {
-	width: 20px;
-  }
-  
+  } 
   ::-webkit-scrollbar-thumb {
 	background:$color;
 	border-radius: 10px;
   }
-  
-  ::-webkit-scrollbar-track {
+
+ ::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 5px grey;
 	border-radius: 10px;
 	background:$secondary-color;
   }
+  
+
+//   @-moz-document url-prefix() {
+//     @media screen and (max-width:600px) {
+// 	   /* insert code here*/
+// 	   .wrap .box_date > span:last-child {
+// 		width: 6em;
+// 	}
+//     }
+// }
+
 
 /*Smartphone*/
 @include mediaSm{
@@ -884,9 +936,12 @@ display: flex;
 .col-6{
 	-webkit-box-orient:vertical;
 	-webkit-box-direction:normal;
+	-moz-box-orient:vertical;
+	-moz-box-direction:normal;
 	-ms-flex-direction:column;
 	flex-direction:column;
 	-webkit-box-flex:100%;
+	-moz-box-flex:100%;
 	-ms-flex:100%;
 	        flex:100%;
 }
@@ -900,7 +955,8 @@ display: flex;
 }
 
 .header-logo {
-    -webkit-box-flex: 1;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
     -ms-flex: 1;
 	flex: 1;
 	left:7px;
@@ -969,7 +1025,12 @@ table, tbody, th, td, tr {
 }
 
 .modal, .modal-left, .modal-right,.modal1, .modal-left1, .modal-right1{
-	-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-moz-box-orient: vertical;
+	-moz-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
 
 .modal,.modal1{
@@ -999,7 +1060,10 @@ td {
 
 .heading-intro {
 
-	-webkit-box-align: center;-ms-flex-align: center;align-items: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 	text-align: justify;
 	margin-top: 6vh;
 }
@@ -1066,13 +1130,17 @@ max-width:720px;
 
 .col-6{
 	display:-webkit-box;
+	display:-moz-box;
 	display:-ms-flexbox;
 	display:flex;
 	-webkit-box-orient:horizontal;
 	-webkit-box-direction:normal;
+	-moz-box-orient:horizontal;
+	-moz-box-direction:normal;
 	-ms-flex-direction:row;
 			flex-direction:row;
 	-webkit-box-flex:calc(100% / 2);
+	-moz-box-flex:calc(100% / 2);
 	-ms-flex:calc(100% / 2);
 			flex:calc(100% / 2);
 }
@@ -1120,7 +1188,8 @@ border-radius:25px;
 
 .box_right
 .custom{
-	-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3;
+	-webkit-box-ordinal-group:4; -moz-box-ordinal-group:4;
+	-ms-flex-order:3;order:3;
 }
 
 .service_one, .contact_one, .portfolio_one{
@@ -1263,3 +1332,11 @@ ul.contact_link{
 	}
 }
 
+@-moz-document url-prefix() {
+    @media screen and (max-width:600px) {
+	   /* insert code here*/
+	   .wrap .box_date > span:last-child {
+		width: 6em;
+	}
+    }
+}
