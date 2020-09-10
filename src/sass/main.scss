@@ -367,7 +367,7 @@ width:$width;
     .image{
 	@include flex-end;
 	background-size:cover; 
-	width:100%;
+	width:$width;
 	
 	&>img{
 	background-color: #000;
