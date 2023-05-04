@@ -1,10 +1,15 @@
 //modal-image1-portfolio
 
 var modalBtn = document.querySelector('.myImg');
+var modalTxt = document.querySelector('.middle');
 var modalBg = document.querySelector('.modal-bg');
 var modalClose = document.querySelector('.modal-close');
 
 modalBtn.addEventListener('click', function(){
+	modalBg.classList.add('bg-active');
+});
+
+modalTxt.addEventListener('click', function(){
 	modalBg.classList.add('bg-active');
 });
 
@@ -17,8 +22,12 @@ modalClose.addEventListener('click', function(){
 var modalBtn1 = document.querySelector('.myImg1');
 var modalBg1 = document.querySelector('.modal-bg1');
 var modalClose1 = document.querySelector('.modal-close1');
+var modalTx = document.querySelector('.middle1');
 
 modalBtn1.addEventListener('click', function(){
+	modalBg1.classList.add('bg-active1');
+});
+modalTx.addEventListener('click', function(){
 	modalBg1.classList.add('bg-active1');
 });
 
@@ -26,7 +35,23 @@ modalClose1.addEventListener('click', function(){
 	modalBg1.classList.remove('bg-active1');
 });
 
+//modal-image coming soon
 
+var modalBtn2 = document.querySelector('.myImg2');
+var modalBg2 = document.querySelector('.modal-bg2');
+var modalClose2 = document.querySelector('.modal-close2');
+var modalTt = document.querySelector('.middle2');
+
+modalBtn2.addEventListener('click', function(){
+	modalBg2.classList.add('bg-active2');
+});
+modalTt.addEventListener('click', function(){
+	modalBg2.classList.add('bg-active2');
+});
+
+modalClose2.addEventListener('click', function(){
+	modalBg2.classList.remove('bg-active2');
+});
 
 //menu
 const menubtn = document.querySelector(".menu-btn");
