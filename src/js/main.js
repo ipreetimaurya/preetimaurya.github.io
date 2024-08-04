@@ -91,7 +91,7 @@ function toggleMenu() {
 
 //typing text
 
-const texts = ["Front-End-Developer", "Web-Designer","UX-Designer"];
+const texts = ["Video-Editing", "Social-Media-Marketing", "Front-End-Developer", "Web-Designer","UX-Designer"];
 let count = 0;
 let index = 0;
 let currentText = "";
